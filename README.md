@@ -29,4 +29,4 @@ sometimes tanks can get stuck: between some specific terrain or with each other
 * pygame
 
 ## Launch
-`python tanks.py` from command line
+`python3 tanks.py` from command line
