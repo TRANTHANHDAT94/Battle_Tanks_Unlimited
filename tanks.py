@@ -155,7 +155,7 @@ class Bullet():
 
 	(OWNER_PLAYER, OWNER_ENEMY) = list(range(2))
 
-	def __init__(self, level, position, direction, damage = 100, speed = 20):
+	def __init__(self, level, position, direction, damage = 100, speed = 25):
 
 		global sprites
 
@@ -570,7 +570,7 @@ class Tank():
 		self.side = side
 
 		# flashing state. 0-off, 1-on
-		self.flash = 0
+		self.flash = 3
 
 		# 0 - no superpowers
 		# 1 - faster bullets
@@ -699,11 +699,11 @@ class Tank():
 
 		# if superpower level is at least 1
 		if self.superpowers > 0:
-			bullet.speed = 8
+			bullet.speed = 10
 
 		# if superpower level is at least 3
 		if self.superpowers > 2:
-			bullet.power = 2
+			bullet.power = 10
 
 		if self.side == self.SIDE_PLAYER:
 			bullet.owner = self.SIDE_PLAYER
